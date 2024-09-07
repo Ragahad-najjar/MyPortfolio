@@ -1,0 +1,109 @@
+.Contact {
+    width: 100%;
+    padding: 0 2rem;
+    margin-bottom: 50px;
+}
+.Contact .ContactMe {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+}
+.Contact .ContactMe .CardContactMe ,
+.Contact  .SocialMedia {
+    width: 400px;
+    padding: 10px 10px 15px;
+    background-color: rgb(201,201,201);
+    border-radius: 10px;
+}
+.Contact .ContactMe .CardContactMe .from {
+    max-width:600px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,1);
+    color: #333;
+}
+.Contact .ContactMe .CardContactMe .form .input-group .input-box{
+    margin-top: 20px;
+}
+.Contact .ContactMe .CardContactMe .form .input-group .input-box .field {
+    width: 100%;
+    height: 50px;
+    border: 2px solid rgb(127,58,121);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    margin-top: 8px;
+    background-color: rgb(201,201,201);
+}
+.Contact .ContactMe .CardContactMe .form .input-group .input-box .field-mess {
+    width: 100%;
+    height: 200px;
+    border: 2px solid rgb(127,58,121);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    margin-top: 8px;
+    background-color: rgb(201,201,201);
+}
+.Contact .ContactMe .CardContactMe .input-group-2 .btn {
+    width: 100%;
+    height: 55px;
+    background-color: rgb(210,104,200);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(56,88,96);
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.Contact .ContactMe .CardContactMe .input-group-2 .btn:hover{
+    border: 2px solid rgb(210,104,200);
+    background-color: #fff;
+}
+.Contact .SocialMedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.Contact .SocialMedia .input-box {
+    margin-top: 20px;
+}
+.Contact .input-box label {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(210,104,200);
+}
+.Contact .SocialMedia .input-box p{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(56,88,96);
+}
+.Contact .SocialMedia .IconsSocial {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding-top: 12px;
+}
+@media (max-width:992px) {
+    .Contact .SocialMedia {
+        max-width: 350px;
+        padding: 0;
+    }
+    .Contact .SocialMedia .input-box p {
+        font-size: 14px;
+    }
+    
+}
+

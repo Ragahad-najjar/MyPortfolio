@@ -1,0 +1,165 @@
+.About {
+    width: 100%;
+}
+.Title {
+    padding-top: 30px;
+    text-decoration: underline solid rgb(130, 57, 126);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Title h1{
+    font-family: "Oswald";
+    font-size: 32px;
+    font-weight: 600;
+}
+.dark .Title h1 {
+    color: #fff;
+
+}
+.About .AboutMe {
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 50px;
+}
+.About .AboutMe .CardAbout ,
+.About .AboutMe .CardSkills {
+    display: grid;
+    width: 420px;
+    background-color: rgb(201, 201,201);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.About .AboutMe .CardAbout h2 span{
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(126,58,122); 
+    text-shadow: 0 0 10px rgb(153,116,160);
+}
+.About .AboutMe .CardAbout h2,
+.About .AboutMe .CardAbout h3 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 7px;
+}
+.About .AboutMe .CardAbout p {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 7px;
+    color: #000;
+}
+.About .AboutMe .CardSkills h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 5px;
+    color: rgb(126,58,122);
+    text-shadow: 0 0 10px rgb(153,116,160);
+}
+.About .AboutMe .CardSkills .skill-bar {
+    margin-bottom:1rem ;
+}
+.About .AboutMe .CardSkills .skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(37, 37, 36,0.2);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+.About .AboutMe .CardSkills .skill-bar .bar span {
+    width: 50%;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    background-color: rgb(126, 60, 121);
+    box-shadow: 0 0 10px rgb(211,110, 203); 
+}
+.About .AboutMe .CardSkills .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.About .AboutMe .CardSkills .skill-bar .info p{
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.About .AboutMe .CardSkills .skill-bar .bar .Html{
+    width: 80%;
+    animation: Html 2s;
+
+}
+.About .AboutMe .CardSkills .skill-bar .bar .Css{
+    width: 75%;
+    animation: Css 3s;
+}
+.About .AboutMe .CardSkills .skill-bar .bar .JavaScript{
+    width: 62%;
+    animation: JavaScript 4s;
+}
+.About .AboutMe .CardSkills .skill-bar .bar .React{
+    width: 70%;
+    animation: React 5s;
+}
+.About .AboutMe .CardSkills .skill-bar .bar .BootStrap{
+    width: 65%;
+    animation: BootStrap 6s;
+}
+.About .AboutMe .CardSkills .skill-bar .bar .Tailwind{
+    width: 50%;
+    animation: Tailwind 7s;
+}
+@keyframes Html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes Css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes JavaScript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 62%;
+    }
+}
+@keyframes React {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes BootStrap {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes Tailwind {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}

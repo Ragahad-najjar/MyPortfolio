@@ -1,0 +1,57 @@
+.card-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding: 1rem 2rem;
+}
+.card-section .card{
+    width: 386px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(201,201,201);
+    border-bottom: 3px solid rgb(130, 57, 126);
+    box-shadow: 0 0 10px rgb(130, 57, 126);
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.card-section .card:hover{
+    transform: scale(1.05);
+}
+.card-section .card img {
+    width: 100%;
+    border-radius: 5px;
+}
+.card-section .card h3{
+    color: #181E4B;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 5px 0px 5px 0px;
+}
+.card-section .card p{
+    color: #181E4B;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.BtnDetail{
+    width:150px;
+    height: 44px;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight:600;
+    color: #181E4B;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(230, 159, 255);
+}
+@media(max-width:992px){
+    .card-section .card {
+        width: 300px;
+    }
+}
