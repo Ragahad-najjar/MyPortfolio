@@ -1,15 +1,10 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
-/* import Hero from './components/Hero/Hero'
-import AboutMe from './components/SecAboutMe/SecAboutMe'
-import Education from './components/SecEducation/SecEducation'
-import Portfolio from './components/SecPortfolio/SecPortfolio'
-import Contact from './components/SecContact/SecContact' */
 import Home from './Pages/Home/Home'
 import CardDetail from './Pages/CardDetail/CardDetail'
 import Footer from './components/Footer/Footer'
-import {Router, Routes, Route } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 function App() {
   const current_theme = localStorage.getItem('current_theme'); 
   const [theme, setTheme ] =useState(current_theme ? current_theme :'light');

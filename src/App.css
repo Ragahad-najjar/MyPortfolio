@@ -6,3 +6,6 @@
 .container.dark{
     background: #000;
 } 
+html {
+    scroll-behavior: smooth;
+}

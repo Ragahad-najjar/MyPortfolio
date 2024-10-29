@@ -101,7 +101,7 @@
 
 }
 .Hero .box .btnCv {
-    width: 215px;
+    width: 185px;
     height: 50px;
     text-align: center;
     color: rgb(113, 74,131);
@@ -118,7 +118,7 @@
 
 }
 .buttons {
-    width: 220px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;

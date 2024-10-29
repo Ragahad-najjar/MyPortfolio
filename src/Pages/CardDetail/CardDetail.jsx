@@ -69,29 +69,28 @@ const ProjectData = [
 ]
 
 function CardDetail() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [Index, setIndex] = useState(0);
   const nextImage = () =>{
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % Project.images.length);
+    setIndex((prevIndex) => (prevIndex + 1) % Project.images.length);
   };
   const prevImage = () => {
-    setCurrentIndex((prevIndex) => 
-      (prevIndex - 1 + Project.images.length) % Project.images.length
-    );
+    setIndex((prevIndex) => 
+      (prevIndex - 1 + Project.images.length) % Project.images.length);
   };
   const { id } = useParams();
-  const Project = ProjectData.find(p => p.id === parseInt(id));
+  const Project =ProjectData.find(p => p.id == parseInt(id));
   return (
     <div className='CardDetails'>
       <h1 className='Title'>{Project.title}</h1>
       <div className='ImagePro'>
-        <img src={Project.images[currentIndex]}/>
+        <img src={Project.images[Index]}/>
       </div>
       <button onClick={prevImage} className='prevImage' >❮</button>
       <button onClick={nextImage} className='nextImage'>❯</button>
       <a href={Project.githubLink} target="_blank">
       <button className='BtnDetail'>
         Go to GitHub
-      </button>
+      </button>        
     </a>
       </div>
       
